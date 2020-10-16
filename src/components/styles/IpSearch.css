@@ -1,0 +1,28 @@
+.ip-search {
+  display: flex;
+  justify-content: center;
+}
+.ip-search__field {
+  height: 3.2rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  width: 600px;
+  border-radius: 15px;
+  padding-left: 1.5rem;
+  font-size: 1rem;
+}
+.button-submit {
+  width: 3.4rem;
+  background-image: url("../../img/icon-arrow.svg");
+  background-color: var(--veryDarkGray);
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100%;
+  border-radius: 0 16px 16px 0;
+  margin-left: -1.5rem;
+  cursor: pointer;
+}
+.button-submit:hover {
+  background-color: #505050;
+}
