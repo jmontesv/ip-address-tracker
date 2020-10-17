@@ -1,12 +1,23 @@
-import React from "react";
+import React, { useRef } from "react";
 import "./styles/IpSearch.css";
 
-export default function IpSearch() {
+export default function IpSearch({ onChangeIp }) {
+  const inputRef = useRef(null);
   return (
     <div className="ip-search">
-      <input className="ip-search__field" type="text"></input>
+      <input
+        ref={inputRef}
+        className="ip-search__field"
+        type="text"
+        placeholder="Search for any IP address or domain"
+      ></input>
       <span>
-        <button className="button-submit"></button>
+        <button
+          onClick={() => {
+            onChangeIp(inputRef.current.value);
+          }}
+          className="button-submit"
+        ></button>
       </span>
     </div>
   );

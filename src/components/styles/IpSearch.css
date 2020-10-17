@@ -19,10 +19,17 @@
   background-repeat: no-repeat;
   background-position: center;
   height: 100%;
-  border-radius: 0 16px 16px 0;
+  border-radius: 0 var(--borderRadius) var(--borderRadius) 0;
   margin-left: -1.5rem;
   cursor: pointer;
 }
 .button-submit:hover {
   background-color: #505050;
+}
+@media screen and (max-width: 765px) {
+  .ip-search {
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+  }
 }

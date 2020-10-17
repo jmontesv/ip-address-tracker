@@ -10,13 +10,14 @@
 :root {
   --veryDarkGray: hsl(0, 0%, 17%);
   --darkGray: hsl(0, 0%, 59%);
+  --borderRadius: 16px;
   font-size: 18px;
 }
 
 body {
   font-family: "Rubik", sans-serif;
-  height: 100vh;
   font-size: 1rem;
+  background-color: green;
 }
 h1 {
   font-size: 1.8rem;

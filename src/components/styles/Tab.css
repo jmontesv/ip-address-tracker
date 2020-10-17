@@ -1,0 +1,33 @@
+.tab {
+  position: relative;
+  min-width: 200px;
+  line-height: 35px;
+  padding-left: 1.3rem;
+}
+.tab--border::before {
+  opacity: 0.5;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  content: "";
+  width: 1px;
+  height: 70%;
+  transform: translateY(-50%);
+  background-color: var(--darkGray);
+}
+.tab__title {
+  color: var(--darkGray);
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+.tab__content {
+  color: var(--veryDarkGray);
+  font-weight: 500;
+  font-size: 1.5rem;
+}
+@media screen and (max-width: 765px) {
+  .tab {
+    padding: 0;
+    text-align: center;
+  }
+}

@@ -1,0 +1,23 @@
+.horizontal-card {
+  position: absolute;
+  top: calc(160px / 2 * -1);
+  left: 50%;
+  transform: translate(-50%);
+  width: 60%;
+  height: 160px;
+  background-color: #ffffff;
+  display: flex;
+  gap: 1rem;
+  padding: 1.7rem;
+  border-radius: var(--borderRadius);
+  z-index: 1000;
+}
+@media screen and (max-width: 765px) {
+  .horizontal-card {
+    width: 90%;
+    flex-direction: column;
+    align-items: center;
+    height: max-content;
+    top: calc(300px / 2.3 * -1);
+  }
+}
