@@ -2,3 +2,6 @@
   height: calc(100vh - 40vh);
   position: relative;
 }
+.leaflet-control-zoom {
+  display: none;
+}

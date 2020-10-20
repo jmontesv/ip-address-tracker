@@ -12,6 +12,9 @@
   padding-left: 1.5rem;
   font-size: 1rem;
 }
+.ip-search__field--hidden {
+  display: none;
+}
 .button-submit {
   width: 3.4rem;
   background-image: url("../../img/icon-arrow.svg");
@@ -30,6 +33,9 @@
   .ip-search {
     margin-left: auto;
     margin-right: auto;
-    width: 90%;
+    width: 86%;
+  }
+  .ip-search__field::placeholder {
+    font-size: 0.7rem;
   }
 }

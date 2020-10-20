@@ -1,0 +1,16 @@
+.border-element::before {
+  opacity: 0.5;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  content: "";
+  width: 1px;
+  height: 70%;
+  transform: translateY(-50%);
+  background-color: var(--darkGray);
+}
+@media screen and (max-width: 768px) {
+  .border-element::before {
+    display: none;
+  }
+}

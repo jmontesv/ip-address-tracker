@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import IpSearch from "./IpSearch";
 import "./styles/Header.css";
 
