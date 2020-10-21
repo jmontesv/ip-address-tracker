@@ -6,7 +6,6 @@ import ElementBordered from "./ElementBordered";
 
 export default function HorizontalCard({ locationData }) {
   const { isFocusSinceMobile, isInputFocus } = useContext(SearchContext);
-  console.log(locationData.isp);
   return (
     <div
       className={
